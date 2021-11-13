@@ -1,0 +1,40 @@
+I'm working on linux machine (litelinux)
+-frontend
+	create react app for dashboard in Ecommerce (from react official website)
+		npx create-react-app frontend
+	add react router to project
+		yarn add react-router-dom
+	start frontend react project  
+		- yarn start 
+
+-backend
+	- first i install xampp from (apachefriends website)
+		1 - download xampp from the apachefriends website 
+		2 - run it from terminal - sudo ./xampp_installation_file_and_path
+		3 - goto /opt/lampp run sudo  ./manager-linux-x64.run
+		4 - start xampp server and mysql server
+		5 - our working directory /opt/lampp/htdocs/projectName
+
+1-Install composer like so: (from stackoverflow solution) 
+	- sudo curl -s https://getcomposer.org/installer | /opt/lampp/bin/php
+2-After installation, you should then symlink it by running command:
+
+	- sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
+3-Then run the command below to allow the 'composer' command to be run globally (this will be run from within the folder where you've just installed composer in which a composer.phar file has just been created):
+
+	- sudo mv composer.phar /usr/local/bin/composer
+
+you can test from terminal that it's work :
+	- php -v
+	- composer -v
+
+you will face problem with permissions with htdocs folder this command can help
+	-sudo chmod 777 /opt/lampp/htdocs
+
+install laravel 
+	- composer global require laravel/installer
+	laravel will not work directly you have to add  it to path by this 
+		-export PATH="$HOME/.composer/vendor/bin:$PATH" from this link 
+		https://stackoverflow.com/questions/28597648/laravel-5-installation-in-ubuntu-laravel-command-not-found
+	- cd backend
+	- php artisan serve

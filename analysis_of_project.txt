@@ -1,0 +1,12 @@
+we want to make Ecommerce Project 
+using Reactjs as FrontEnd 
+using Larvel as BackEnd
+using mysql as our database
+
+we have user and product entities
+product:
+    -add product (create)[post]
+    -edit product image or data (update)[put]
+    -delete product (delete) [delete]
+    -read all products (read)[get]
+    -show specific product by id (show)[get]

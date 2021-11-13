@@ -1,0 +1,13 @@
+- Ecommerce_React_Laravel (main structure folders)
+	|__frontend
+		|__public 
+		|__src
+	
+	|__backend
+		|__app      
+		|__bootstrap     
+		|__database     
+		|__routes   
+		|__resources
+
+		
